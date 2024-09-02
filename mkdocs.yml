@@ -1,4 +1,4 @@
-site_name: Barelang FC - Documentation
+site_name: Barelang 7 - Documentation
 theme:
   name: readthedocs
   highlightjs: true
