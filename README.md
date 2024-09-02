@@ -1,7 +1,7 @@
-Barelang FC - Documentation
+Barelang 7 - Documentation
 ===============================================
 
-Dokumen ini berisi semua dokumentasi Tim Barelang FC
+Dokumen ini berisi semua dokumentasi Tim Barelang 7
 
 <!-- 
 [![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
