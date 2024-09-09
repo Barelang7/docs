@@ -99,7 +99,7 @@ Run the following command in the terminal
 sudo usermod -a -G dialout $USER
 reboot
 ```
-set permanent latency timer:
+set permanent latency timer  :
 ```
 sudo su
 cd /etc/udev/rules.d
