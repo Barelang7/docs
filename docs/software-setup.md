@@ -4,7 +4,7 @@
 OrangePI 3B
 
 # OS Instalation
-## Prepare the required for sintalation
+## Prepare the required for instalation
 1. TF card, class 10 or above high-speed SanDisk/SamsungEvo card with a minimum capacity of 32Gb (Recomended 64 GB).
 2. TF card reader, used to burn the image into the TF card.
 3. Monitor/ Display with HDMI Interface.
