@@ -57,4 +57,54 @@ cd /usr/local/include
 sudo ln -s /usr/local/boost_1_84_0/boost boost 
 cd -
 ```
+## Downloading and Installing Lua Header Files/Dependencies
+```
+wget http://www.lua.org/ftp/lua-5.1.4.tar.gz
+tar -xvf lua-5.1.4.tar.gz
+cd lua-5.1.4
+make clean
+make linux
+sudo make install
+cd ..
+sudo apt install git
+sudo apt install luarocks
+sudo luarocks install luasocket
+sudo luarocks install struck
+```
+## Install Source Code
+Open the Barelang 7 Source code and look for the `Lib` outside the `player`. Run following command in the terminal:
+```
+cd Lib
+make clean
+make setup_op
+```
+## Persistance USB
+Note: In this section, all robot sub-controller should be active and must be connected to pc.
 
+Run the following command in the terminal.
+Identify sub-controller serial for each ttyUSB0 and ttyUSB1:
+```
+udevadm info -a -n /dev/ttyUSB0 | grep '{serial}' | head -n1 
+udevadm info -a -n /dev/ttyUSB1 | grep '{serial}' | head -n1
+cd /etc/udev/rules.d
+sudo nano Barelang7.rules
+```
+and following:
+```
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AH03PJVL", SYMLINK+="CM730" // all value is unique
+SUBSYSTEM=="tty", ATTRS{serial}=="0000:00:14.0", SYMLINK+="strategyUSB" // all value is unique
+```
+Run the following command in the terminal 
+```
+sudo usermod -a -G dialout $USER
+reboot
+```
+set permanent latency timer:
+```
+sudo su
+cd /etc/udev/rules.d
+touch B7Latency.rules
+echo ACTION==\"add\", SUBSYSTEM==\"usb-serial\", DRIVER==\"ftdi_sio\", ATTR{latency_timer}=\"1\" > B7Latency.rules
+sudo udevadm control --reload-rules
+sudo udevadm trigger --action=add
+```
