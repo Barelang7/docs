@@ -61,4 +61,55 @@ following step to press button:
 
   - To start running the robot, press the white button located on the shoulder of the robot, then robot will be in initial positition.
   - Last, press again white button on the shoulder of the robot, then robot will be start dancing.
+
+## **3. Tutorial Tunning Robot**
+
+1. Turn on the Orange Pi 3B.
+2. Open emulator terminal contained in tab application GUI Orange Pi.
+3. After the terminal is opened, can go to directory to run the program ``run_dcm.lua`` by running this syntax:
+    ```
+    ~$ cd /Document/Program_B7_R1/Player
+    ```
+    In this section is Robot 1 (R1). Then, click enter.
+
+4. Successfully move to the directory for running the program ``run_dcm.lua``.
+5. Before run the program ``run_dcm.lua`` must on servo first by pressing the on swith on the back of robot.
+6. After the switch is on, the servo will turn on led synchronously indicating that all servos are active.
+7. Next, can run the program ``run_dcm.lua`` by running this syntax: 
+    ```
+    ~$ lua run_dcm.lua
+    ```
+    Then, click enter.
+8. If run the program is successfully, U2D2 will indicator display a green color (Tx) and blue color (Rx) indicating that the program is running well. 
+9.  Open the terminal for running the program ``run_setup.lua``.
+10. Move to the directory for running the program ``run_setup.lua`` by running this syntax:
+    
+    ```
+    ~$ cd /Document/Program_B7_R1/Player
+    ```
+    Then, click enter.
+11. Successfully move to the directory for running the program ``run_setup.lua`` by running this syntax:
+    
+    ```
+    ~$ lua run_setup.lua
+    ``` 
+    Then, click enter.
+12. After the program is running, make a robot in a standing position by clicking: 
+**v (set the servo position at point 0), b (enable test_walk), 8 (stand)**
+13. Next, click **9 (walk)** in the keyboard to see the robot walking in place because the velocity is 0.
+14. To make the robot walks forward, click **ii** on the keyboard for add the velocity in the robot.
+14. If the robot can't walk properly or robot foot stomps, can the robot tunning by click **v** on the keyboard to make standing upright the robot position on the servo in point 0.
+15. Then, make the adjustment to the joints of the robot by adjusting the:
+1 and 2 (changing the joint points)
+a and d (adding and subtracting values at the right foot joint)
+w and x (adding and subtracting values at the left foot joint). The joints that are set are:
+    - angkle_pitch,
+    - angkle_roll,
+    - knee_pitch,
+    - hip_pitch,
+    - hip_roll,
+    - hip_yaw
+
+    according to the robot's needs.
+
   

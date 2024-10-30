@@ -69,7 +69,7 @@ cd ..
 sudo apt install git
 sudo apt install luarocks
 sudo luarocks install luasocket
-sudo luarocks install struck
+sudo luarocks install struct
 ```
 ## Install Source Code
 Open the Barelang 7 Source code and look for the `Lib` outside the `player`. Run following command in the terminal:
