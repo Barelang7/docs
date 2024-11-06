@@ -74,54 +74,63 @@ following step to press button:
 ### Record Motion
 1. Open a new terminal to run the ***run_RecMotion.lua*** program and start creating the robot's record motion.
 2. In the terminal, open the destination file directory to run the ***run_RecMotion.lua*** program by typing the following syntax:
-    ```
-    ~$ cd Documents/Program_B7_v1_R1/Player
-    ```
+   
+```
+~$ cd Documents/Program_B7_v1_R1/Player
+```
+
 3. Then press **' Enter '**.
 4. This will move to the directory containing the ***run_RecMotion.lua*** program.
 5. Start running the ***run_RecMotion.lua*** program by typing the following syntax:
-    ```
-    lua run_RecMotion.lua
-    ```
-    ***Note:*** *(When running the program, but the U2D2 indicator is red, there is a problem in serial communication)*
+   
+```
+lua run_RecMotion.lua
+```
+
+  ***Note:*** *(When running the program, but the U2D2 indicator is red, there is a problem in serial communication)*
 6.  Then press **' Enter '**
 7.  Then the ***run_RecMotion.lua*** program will run in the terminal and display the following information:
     ![alt text](image.jpg)
 
 8.  From the information displayed on the terminal, pay attention to the instructions displayed to start recording the robot's movements.
 9.  Start recording the robot's movements by clicking several buttons according to the information in the terminal.
-10. When the **‘M’** button is pressed the recording process will start and the program will open a new file called ***tari_oleg.lua*** and initialise the first movement.
-11. Then when the **‘T’** button is pressed, it will automatically add motion and record the servo value in the ***tari_oleg.lua*** file.
-12. When the **‘S’** button is pressed it will save the movement into the ***tari_oleg.lua*** file and will close the program after the last program save.
-13. When you have recorded the motion, stop the ***run_RecMotion.lua*** program by pressing Ctrl+C.
-14. To view the recorded motion program, from the current directory open the ***tari_oleg.lua*** file in the terminal by typing the following syntax:
-    ```
-    ~$ geany tari_oleg.lua
-    ```
-    ***Note:***
-    *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
-15. This will open the program view in the ***tari_oleg.lua*** file.
-16. Copy all the program content from the file ***tari_oleg.lua*** and paste it into a file called ***LongLeft.lua***.
-17. To enter the ***LongLeft.lua*** file from the current directory, type the following syntax into the terminal:
-    ```
-    ~$ cd Motion/keyframes
-    ```
-    ***Note:***
-    *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
-18. Then press **' Enter '**
-19. Paste the contents into the ***LongLeft.lua*** file and save it.
-20. To view the motion records of the robot, run the ***run_setup.lua*** program.
-21. To run the ***run_setup.lua*** program, move to the **‘Player’** directory of the current directory by typing the following syntax on the terminal:
-    ```
-    ~$ cd ../..
-    ```
-    ***Note:***
-    *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player/Motion/keyframe**)*
-22. Then press **' Enter '**
-23. Start running the ***run_setup.lua*** program by typing the following syntax:
-    ```
-    lua run_setup.lua
-    ```
+10.  When the **‘M’** button is pressed the recording process will start and the program will open a new file called ***tari_oleg.lua*** and initialise the first movement.
+11.  Then when the **‘T’** button is pressed, it will automatically add motion and record the servo value in the ***tari_oleg.lua*** file.
+12.  When the **‘S’** button is pressed it will save the movement into the ***tari_oleg.lua*** file and will close the program after the last program save.
+13.  When you have recorded the motion, stop the ***run_RecMotion.lua*** program by pressing Ctrl+C.
+14.  To view the recorded motion program, from the current directory open the ***tari_oleg.lua*** file in the terminal by typing the following syntax:
+    
+```
+~$ geany tari_oleg.lua
+```
+
+***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
+15.  This will open the program view in the ***tari_oleg.lua*** file.
+16.  Copy all the program content from the file ***tari_oleg.lua*** and paste it into a file called ***LongLeft.lua***.
+17.  To enter the ***LongLeft.lua*** file from the current directory, type the following syntax into the terminal:
+   
+```
+~$ cd Motion/keyframes
+```
+
+  ***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
+18.  Then press **' Enter '**
+19.  Paste the contents into the ***LongLeft.lua*** file and save it.
+20.  To view the motion records of the robot, run the ***run_setup.lua*** program.
+21.  To run the ***run_setup.lua*** program, move to the **‘Player’** directory of the current directory by typing the following syntax on the terminal:
+   
+```
+~$ cd ../..
+```
+
+  ***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player/Motion/keyframe**)*
+22.  Then press **' Enter '**
+23.  Start running the ***run_setup.lua*** program by typing the following syntax:
+
+```
+lua run_setup.lua
+```
+
 24.  Then press **' Enter '**
 25.  Then the ***run_setup.lua*** program will run in the terminal and display the following information:                                                                  
    ![alt text](image1.jpg)
