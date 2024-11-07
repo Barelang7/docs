@@ -86,8 +86,8 @@ following step to press button:
 ```
 lua run_RecMotion.lua
 ```
+***Note:*** *(When running the program, but the U2D2 indicator is red, there is a problem in serial communication)*
 
-  ***Note:*** *(When running the program, but the U2D2 indicator is red, there is a problem in serial communication)*
 6.  Then press **' Enter '**
 7.  Then the ***run_RecMotion.lua*** program will run in the terminal and display the following information:
     ![alt text](image.jpg)
