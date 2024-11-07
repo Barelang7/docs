@@ -5,10 +5,10 @@
 
 ## 2. Tutorial Running the Robot
 
-1. Turn on the Orange Pi 3B.
-2. Connect Orange Pi 3B and PC or Laptop in the same Wi-Fi network.
-3. Open NoMachine and wait until Orange Pi 3B shows up on the screen.
-4. After the Orange Pi 3B show in screen NoMachine, click to inside Orange Pi 3B. 
+- Turn on the Orange Pi 3B.
+- Connect Orange Pi 3B and PC or Laptop in the same Wi-Fi network.
+- Open NoMachine and wait until Orange Pi 3B shows up on the screen.
+- After the Orange Pi 3B show in screen NoMachine, click to inside Orange Pi 3B. 
    
 ***Note:***
 
@@ -66,9 +66,9 @@ following step to press button:
 ## 3. Tutorial Record Motion
 
 ### Activating Orange Pi 3b via No machine:
-1. Open NoMachine on your computer.
-2. Ensure that the Orange Pi 3b network and the computer are connected in the same network ***(if not already connected, use a LAN cable to connect between the Orange Pi and the computer)*** and then set to the same network.
-3. Once successfully connected, the Orange Pi 3B can be controlled via a computer.
+- Open NoMachine on your computer.
+- Ensure that the Orange Pi 3b network and the computer are connected in the same network ***(if not already connected, use a LAN cable to connect between the Orange Pi and the computer)*** and then set to the same network.
+- Once successfully connected, the Orange Pi 3B can be controlled via a computer.
 
 
 ### Record Motion
@@ -87,7 +87,7 @@ following step to press button:
 ~$ lua run_RecMotion.lua
 ```
 
-***Note:*** *(When running the program, but the U2D2 indicator is red, there is a problem in serial communication)*
+  ***Note:*** *(When running the program, but the U2D2 indicator is red, there is a problem in serial communication)*
 
 - Then press**' Enter '**
 - Then the ***run_RecMotion.lua*** program will run in the terminal and display the following information:
@@ -105,7 +105,7 @@ following step to press button:
 ~$ geany tari_oleg.lua
 ```
 
-***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
+  ***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
 
 - This will open the program view in the ***tari_oleg.lua*** file.
 - Copy all the program content from the file ***tari_oleg.lua*** and paste it into a file called ***LongLeft.lua***.
@@ -115,7 +115,7 @@ following step to press button:
 ~$ cd Motion/keyframes
 ```
 
-***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
+  ***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player**)*
 
 - Then press **' Enter '**
 - Paste the contents into the ***LongLeft.lua*** file and save it.
@@ -126,7 +126,7 @@ following step to press button:
 ~$ cd ../..
 ```
 
-***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player/Motion/keyframe**)*
+  ***Note:*** *(Current directory **~$ cd Documents/Program_B7_v1_R1/Player/Motion/keyframe**)*
 
 - Then press **' Enter '**
 - Start running the ***run_setup.lua*** program by typing the following syntax:
@@ -145,42 +145,38 @@ following step to press button:
 
 ## 4. Tutorial Tunning Robot
 
-1. Turn on the Orange Pi 3B.
-2. Open emulator terminal contained in tab application GUI Orange Pi.
-3. After the terminal is opened, can go to directory to run the program ***run_dcm.lua*** by running this syntax:
+- Turn on the Orange Pi 3B.
+- Open emulator terminal contained in tab application GUI Orange Pi.
+- After the terminal is opened, can go to directory to run the program ***run_dcm.lua*** by running this syntax:
 ```
 ~$ cd /Document/Program_B7_R1/Player
 ```
-  In this section is Robot 1 (R1). Then, click enter.
-
-4. Successfully move to the directory for running the program ***run_dcm.lua***.
-5. Before run the program ***run_dcm.lua*** must on servo first by pressing the on swith on the back of robot.
-6. After the switch is on, the servo will turn on led synchronously indicating that all servos are active.
-7. Next, can run the program ***run_dcm.lua*** by running this syntax: 
+- In this section is Robot 1 (R1). Then, click enter.
+- Successfully move to the directory for running the program ***run_dcm.lua***.
+- Before run the program ***run_dcm.lua*** must on servo first by pressing the on swith on the back of robot.
+- After the switch is on, the servo will turn on led synchronously indicating that all servos are active.
+- Next, can run the program ***run_dcm.lua*** by running this syntax: 
 ```
 ~$ lua run_dcm.lua
 ```
-  Then, click enter.
-
-8. If run the program is successfully, U2D2 will indicator display a green color (Tx) and blue color (Rx) indicating that the program is running well.
-9. Open the terminal for running the program ***run_setup.lua***.
-10. Move to the directory for running the program ***run_setup.lua*** by running this syntax:
+- Then, click enter.
+- If run the program is successfully, U2D2 will indicator display a green color (Tx) and blue color (Rx) indicating that the program is running well.
+- Open the terminal for running the program ***run_setup.lua***.
+- Move to the directory for running the program ***run_setup.lua*** by running this syntax:
 ```
 ~$ cd /Document/Program_B7_R1/Player
 ```
-  Then, click enter.
-
-11. Successfully move to the directory for running the program ***run_setup.lua*** by running this syntax:  
+- Then, click enter.
+- Successfully move to the directory for running the program ***run_setup.lua*** by running this syntax:  
 ```
 ~$ lua run_setup.lua
 ``` 
-  Then, click enter.
-
-12. After the program is running, make a robot in a standing position by clicking: 
+- Then, click enter.
+- After the program is running, make a robot in a standing position by clicking: 
 **v (set the servo position at point 0), b (enable test_walk), 8 (stand)** Next, click **9 (walk)** in the keyboard to see the robot walking in place because the velocity is 0.
-13. To make the robot walks forward, click **ii** on the keyboard for add the velocity in the robot.
-14. If the robot can't walk properly or robot foot stomps, can the robot tunning by click **v** on the keyboard to make standing upright the robot position on the servo in point 0.
-15. Then, make the adjustment to the joints of the robot by adjusting the:
+- To make the robot walks forward, click **ii** on the keyboard for add the velocity in the robot.
+- If the robot can't walk properly or robot foot stomps, can the robot tunning by click **v** on the keyboard to make standing upright the robot position on the servo in point 0.
+- Then, make the adjustment to the joints of the robot by adjusting the:
 1 and 2 (changing the joint points)
 a and d (adding and subtracting values at the right foot joint)
 w and x (adding and subtracting values at the left foot joint). The joints that are set are:
