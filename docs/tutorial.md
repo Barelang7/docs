@@ -1,9 +1,6 @@
 # Tutorial 
 
-## 1. Tutorial Connect Bluetooth
-
-
-## 2. Tutorial Running the Robot
+## 1. Tutorial Running the Robot
 
 - Turn on the Orange Pi 3B.
 - Connect Orange Pi 3B and PC or Laptop in the same Wi-Fi network.
@@ -63,7 +60,7 @@ following step to press button:
   - Last, press again white button on the shoulder of the robot, then robot will be start dancing.
 
 
-## 3. Tutorial Record Motion
+## 2. Tutorial Record Motion
 
 ### Activating Orange Pi 3b via No machine:
 - Open NoMachine on your computer.
@@ -143,7 +140,7 @@ following step to press button:
 - Finish
 
 
-## 4. Tutorial Tunning Robot
+## 3. Tutorial Tunning Robot
 
 - Turn on the Orange Pi 3B.
 - Open emulator terminal contained in tab application GUI Orange Pi.

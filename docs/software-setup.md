@@ -240,3 +240,10 @@ echo ACTION==\"add\", SUBSYSTEM==\"usb-serial\", DRIVER==\"ftdi_sio\", ATTR{late
 sudo udevadm control --reload-rules
 sudo udevadm trigger --action=add
 ```
+
+## Setting Up Static Bluetooth on Orange Pi 3B
+1. Run the command 
+   ```bash
+   sudo geany /usr/lib/orangepi/orangepi-hardware-optimization
+   ```
+2. In Line 358, Change **--bd_addr_rand** to **--bd_addr B7:B7:B7:B7:B7:01** for Robot 1 and **B7:B7:B7:B7:B7:02** for Robot 2.
